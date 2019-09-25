@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+/* 로그인 폼 */
+#loginForm {
+	width: 600px;
+	margin: 0 auto;
+}
+#loginForm div {
+	margin: 0 auto;
+	width: 240px;
+	height: 30px;	
+}
+#loginForm input {
+	height: 24px;
+}
+#loginForm .btnSubmit {
+	text-align: right;
+}
+.memberTitle{
+	height: 60px;
+	line-height: 60px;	
+	text-align: center;	
+}
+
+/* 회원 가입, 수정 폼 페이지 */
+/* 페이지 초기화 */
+#memberJoinForm {
+	margin: 10px auto;
+	width: 600px;	
+}
+#joinFormTitle {	
+	width: 590px;
+	margin: 0 auto;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.2em;
+	text-align: center;
+}
+#memberInputDefault{	
+	margin: 5px auto;
+	padding: 10px;
+	width: 588px; 
+	background: #EBF3F9; 
+	border: 1px solid #3A96D6; 
+	border-radius: 5px;
+}
+#memberInputOption {
+	margin: 5px auto;
+	padding: 10px;
+	width: 588px;
+	border: 2px dotted #3A96D6; 
+	background: #EBF3F9; 
+	border-radius: 5px;
+}
+.memberInputText {
+	height: 30px;
+	line-height: 30px;
+}
+.memberSpan {
+	display: inline-block; 
+	width: 120px; 
+	text-align: right; 
+	margin-right: 10px;	
+}
+.formButton {
+	margin-top: 15px; 
+	text-align: center;
+}
+/* 아이디, 비밀번호 영문자, 숫자만 입력되고 한글은 입력되지 않도록 설정
+ * 아래에서 벤더프리픽스를 적용하였지만  
+ * ime-mode는 IE에는 적용이 잘 되고 chrome 에서는 않됨
+ **/
+.imeMode {
+	-webkit-ime-mode: disabled; 
+	-moz-ime-mode: disabled; 
+	-ms-ime-mode: disabled; 
+	ime-mode: disabled;
+}
+
+/* 회원 아이디 체크 페이지 */
+#idCheckForm {
+	margin: 20px auto;
+	width: 340px;
+	font-size:0.8em; 
+}
+#idCheckForm h3 {
+	text-align: center;
+	font-size: 1.2em;
+}
+.checkFormSpan {
+	display: inline-block; 
+	width: 50px; 
+	text-align: right; 
+	margin-right: 10px
+}
+
+/* 우편번호 검색 페이지 */
+#searchZipcode {
+	margin: 10px auto;
+	padding: 5px;
+	width: 360px;
+	border: 0;
+	border-collapse: collapse;	
+	font-size: 0.8em;	
+}
+.zipcodeTitle {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+#inputDong {
+	padding-top: 10px;
+	text-align: center;
+}
+.inputDong {	
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;	
+}
+.notSearch {
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.zipcode {
+	height: 25px;
+	width: 40px;
+}
+.address {
+	width: 255px;
+	padding-left: 5px;	
+}
+.btn {
+	width: 35px;	
+}
+
+/* 회원정보 입력확인 */
+.inputInfoSpan {
+	display: inline-block; 
+	width: 448px; 
+	text-align: left;	
+}

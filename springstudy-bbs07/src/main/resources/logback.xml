@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	MyBatis(DB) 로그를 자세히 출력하기 위해 log4jdbc 라이브러리를 이용
+	pom.xml에 아래와 같이 라이브러리 의존성을 추가해야 함.
+	
+		<dependency>
+			<groupId>org.bgee.log4jdbc-log4j2</groupId>
+			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+			<version>1.16</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			<version>1.6.6</version>
+		</dependency> 		  
+-->
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	<logger name="jdbc.sqlonly" level="DEBUG" />
+	<logger name="jdbc.sqltiming" level="INFO" />
+	<logger name="jdbc.audit" level="WAN" />
+	<logger name="jdbc.resultset" level="ERROR" />
+	<logger name="jdbc.resultsettable" level="ERROR" />
+	<logger name="jdbc.connection" level="INFO" />
+</configuration>
